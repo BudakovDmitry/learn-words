@@ -48,12 +48,10 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({ template: './index.html' }),
-    new MiniCssExtractPlugin({
-      filename: '[name].css',
-    }),
+    new MiniCssExtractPlugin({ filename: '[name].css' }),
   ],
   resolve: {
-    extensions: ['*', '.js', '.jsx'],
+    extensions: ['.js', '.jsx', '.png'],
     alias: {
       src: path.resolve('./src'),
     },
@@ -66,6 +64,7 @@ module.exports = {
     static: {
       directory: path.join(__dirname, 'public'),
     },
+    historyApiFallback: true,
     compress: true,
     port: 3000,
   },
