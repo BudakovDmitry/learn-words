@@ -1,7 +1,5 @@
-import { Typography } from '@mui/material'
-
 const NewWords = () => {
-  return <Typography>NewWords</Typography>
+  return <h2>NewWords</h2>
 }
 
 export default NewWords
