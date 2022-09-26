@@ -5,7 +5,6 @@
   "repository": "https://github.com/BudakovDmitry/learn-words.git",
   "author": "Budakov Dmitry <budakov.it@gmail.com>",
   "license": "MIT",
-  "homepage": "https://budakovdmitry.github.io/learn-words/home",
   "scripts": {
     "start": "webpack serve",
     "build": "webpack",
