@@ -3,3 +3,6 @@ export const TEXT_FOR_NO_WORDS =
 
 export const TEXT_FOR_NOT_ENOUGH_WORDS =
   'Наразі недостатньо слів, потрібно мінімум 10 слів, додайте ще: '
+
+export const TEXT_FOR_NO_RESULTS =
+  'Ви ще не встигли жодного разу пройти тест, тому результатів допоки немає!'

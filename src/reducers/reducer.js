@@ -57,6 +57,16 @@ const initialState = {
       date: '01/02/2022',
       result: '100',
     },
+    {
+      id: 2,
+      date: '01/02/2022',
+      result: '40',
+    },
+    {
+      id: 3,
+      date: '01/02/2022',
+      result: '50',
+    },
   ],
   currentResult: {
     date: '01/02/2022',

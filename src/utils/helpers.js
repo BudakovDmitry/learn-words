@@ -46,3 +46,28 @@ export const getFourTranslateWords = (words, activeWord) =>
 
 export const minCountWords = (wordsLength, minWords = 10) =>
   minWords - wordsLength
+
+const getAllResultsValue = (results, resultsLength) => {
+  return {
+    resultsLength: resultsLength,
+    results: results.map(result => Number(result.result)),
+  }
+}
+
+const getResultTotal = results => {
+  return {
+    ...results,
+    results: results.results.reduce((acc, result) => acc + result, 0),
+  }
+}
+
+const averageResult = results => {
+  return Math.floor(results.results / results.resultsLength)
+}
+
+export const averagePercentResult = (results, resultsLength) =>
+  pipe(
+    getAllResultsValue,
+    getResultTotal,
+    averageResult,
+  )(results, resultsLength)

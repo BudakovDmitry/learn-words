@@ -1,0 +1,17 @@
+.all-results_header {
+  text-align: center;
+}
+
+.all-results_results {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.all-results_middle {
+  margin: 0;
+}
+
+.all-results-no-results {
+  text-align: center;
+}
