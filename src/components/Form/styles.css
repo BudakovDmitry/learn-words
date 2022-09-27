@@ -36,6 +36,10 @@
   font-size: 18px;
   margin-top: 65px;
 }
+.form-button:hover {
+  background-color: #236130; 
+}
+
 
 .form-error-text {
   width: 350px;

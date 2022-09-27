@@ -15,8 +15,10 @@
   color: #000000;
   cursor: pointer;
   font-size: 18px;
+  padding: 15px;
+  border-radius: 5px;
 }
 
 .nav a:hover {
-  text-decoration: underline;
+  background-color: rgba(168, 168, 168, 0.502);
 }
