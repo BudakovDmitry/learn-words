@@ -1,7 +1,22 @@
 import 'src/components/WordTranslate/styles.css'
+import { useWordTranslate } from 'src/components/WordTranslate/useWordTranslate'
 
-const WordTranslate = ({ word }) => {
-  return <button className="word-translate_button">{word}</button>
+const WordTranslate = ({ word, activeTranslateWord }) => {
+  const { isRightSelected, rightSelect } = useWordTranslate()
+  return (
+    <button
+      className={
+        rightSelect === 'true'
+          ? 'word-translate_button right'
+          : rightSelect === 'false'
+          ? 'word-translate_button wrong'
+          : 'word-translate_button'
+      }
+      onClick={() => isRightSelected(word, activeTranslateWord)}
+    >
+      {word}
+    </button>
+  )
 }
 
 export default WordTranslate

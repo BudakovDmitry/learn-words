@@ -13,3 +13,13 @@
   background-color: #7c7c7c;
   color: #ffffff;
 }
+
+.word-translate_button.right {
+    background-color: green;
+    color: #ffffff;
+}
+
+.word-translate_button.wrong {
+  background-color: rgb(169, 5, 5);
+  color: #ffffff;
+}
