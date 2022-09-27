@@ -7,4 +7,10 @@
 
 .list-header-no-words {
   text-align: center;
+  padding: 0 100px;
+  line-height: 2;
+}
+
+.list-header {
+  text-align: center;
 }
