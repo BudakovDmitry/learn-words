@@ -50,8 +50,8 @@ export const minCountWords = (wordsLength, minWords = 10) =>
 
 const getAllResultsValue = (results, resultsLength) => {
   return {
+    results: results.map(result => result.percent),
     resultsLength: resultsLength,
-    results: results.map(result => result.result),
   }
 }
 

@@ -7,21 +7,21 @@ import { TEXT_FOR_NO_RESULTS } from 'src/constants'
 import { averagePercentResult } from 'src/utils/helpers'
 
 const AllResults = () => {
-  const results = useSelector(state => state.results)
+  const allResults = useSelector(state => state.allResults)
 
   return (
     <div className="all-results">
       <Navigation>
         <Link to="/">Головна</Link>
       </Navigation>
-      {results.length ? (
+      {allResults.length ? (
         <>
           <h2 className="all-results_header">Ваші результати:</h2>
           <div className="all-results_results">
             <AllResultsList />
             <h2 className="all-results_middle">{`Середній відсоток: ${averagePercentResult(
-              results,
-              results.length,
+              allResults,
+              allResults.length,
             )}%`}</h2>
           </div>
         </>

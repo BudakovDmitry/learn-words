@@ -31,14 +31,14 @@ export const useWordCheck = () => {
       dispatch(
         addCurrentResult({
           date: formatToLocaleDateString(new Date()),
-          result: getPercentCorrectAnswers(count),
+          percent: getPercentCorrectAnswers(count),
           id: nanoid(),
         }),
       )
       dispatch(
         addResult({
           date: formatToLocaleDateString(new Date()),
-          result: getPercentCorrectAnswers(count),
+          percent: getPercentCorrectAnswers(count),
           id: nanoid(),
         }),
       )

@@ -3,14 +3,14 @@ import 'src/components/AllResultsList/styles.css'
 import { useSelector } from 'react-redux'
 
 const AllResultsList = () => {
-  const results = useSelector(state => state.results)
+  const allResults = useSelector(state => state.allResults)
 
   return (
     <ul className="all-results-list">
-      {results.map(result => (
+      {allResults.map(result => (
         <AllResultsItem
           key={result.id}
-          result={result.result}
+          result={result.percent}
           date={result.date}
         />
       ))}

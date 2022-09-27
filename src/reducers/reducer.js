@@ -51,26 +51,26 @@ const initialState = {
       translateWord: 'Она',
     },
   ],
-  results: [
+  allResults: [
     {
       id: 1,
       date: '01/02/2022',
-      result: 100,
+      percent: 100,
     },
     {
       id: 2,
       date: '01/02/2022',
-      result: 40,
+      percent: 40,
     },
     {
       id: 3,
       date: '01/02/2022',
-      result: 50,
+      percent: 50,
     },
   ],
   currentResult: {
     date: '01/02/2022',
-    result: 100,
+    percent: 100,
   },
 }
 
@@ -84,7 +84,7 @@ const reducer = (state = initialState, action) => {
     case 'ADD_RESULT':
       return {
         ...state,
-        results: [...state.results, action.payload],
+        allResults: [...state.allResults, action.payload],
       }
     case 'ADD_CURRENT_RESULT':
       return {
