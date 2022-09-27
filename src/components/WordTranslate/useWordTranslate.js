@@ -4,12 +4,14 @@ export const useWordTranslate = () => {
   const [rightSelect, setRightSelect] = useState('')
 
   const isRightSelected = (selectedTranslate, activeTranslate) => {
-    setRightSelect(selectedTranslate === activeTranslate ? 'true' : 'false')
+    selectedTranslate === activeTranslate
+      ? setRightSelect('true')
+      : setRightSelect('false')
   }
 
   setTimeout(() => {
     setRightSelect('')
-  }, 450)
+  }, 500)
 
   return { isRightSelected, rightSelect }
 }

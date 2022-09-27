@@ -6,3 +6,7 @@ export const TEXT_FOR_NOT_ENOUGH_WORDS =
 
 export const TEXT_FOR_NO_RESULTS =
   'Ви ще не встигли жодного разу пройти тест, тому результатів допоки немає!'
+
+const COUNT_ANSWERS = 10
+
+export const PERCENT_FOR_EVERY_CORRECT_ANSWERS = 100 / COUNT_ANSWERS

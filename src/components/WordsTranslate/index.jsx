@@ -1,7 +1,13 @@
 import WordTranslate from 'src/components/WordTranslate'
 import 'src/components/WordsTranslate/styles.css'
 
-const WordsTranslate = ({ words, activeTranslateWord, viewNewWord }) => {
+const WordsTranslate = ({
+  words,
+  activeTranslateWord,
+  viewNewWord,
+  count,
+  setCount,
+}) => {
   return (
     <div className="words-translate">
       {words.map((word, index) => (
@@ -10,6 +16,8 @@ const WordsTranslate = ({ words, activeTranslateWord, viewNewWord }) => {
           word={word}
           activeTranslateWord={activeTranslateWord}
           viewNewWord={viewNewWord}
+          count={count}
+          setCount={setCount}
         />
       ))}
     </div>

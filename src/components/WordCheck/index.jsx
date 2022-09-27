@@ -4,7 +4,8 @@ import { getFourTranslateWords } from 'src/utils/helpers'
 import { useWordCheck } from 'src/components/WordCheck/useWordCheck'
 
 const WordCheck = () => {
-  const { words, activeWordIndex, addWordIndex, wordNumber } = useWordCheck()
+  const { words, activeWordIndex, addWordIndex, wordNumber, count, setCount } =
+    useWordCheck()
 
   return (
     <div className="word-check">
@@ -19,6 +20,8 @@ const WordCheck = () => {
         )}
         activeTranslateWord={words[activeWordIndex].translateWord}
         viewNewWord={addWordIndex}
+        count={count}
+        setCount={setCount}
       />
       <p className="word-check_word-number">{`Слово №${wordNumber}`}</p>
     </div>

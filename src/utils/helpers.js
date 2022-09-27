@@ -1,4 +1,5 @@
 import { pipe } from 'lodash/fp'
+import { PERCENT_FOR_EVERY_CORRECT_ANSWERS } from 'src/constants'
 
 const getAllTranslateWords = (words, activeWord) => {
   return {
@@ -50,7 +51,7 @@ export const minCountWords = (wordsLength, minWords = 10) =>
 const getAllResultsValue = (results, resultsLength) => {
   return {
     resultsLength: resultsLength,
-    results: results.map(result => Number(result.result)),
+    results: results.map(result => result.result),
   }
 }
 
@@ -71,3 +72,8 @@ export const averagePercentResult = (results, resultsLength) =>
     getResultTotal,
     averageResult,
   )(results, resultsLength)
+
+export const getPercentCorrectAnswers = result =>
+  result * PERCENT_FOR_EVERY_CORRECT_ANSWERS
+
+export const formatToLocaleDateString = date => date.toLocaleDateString()

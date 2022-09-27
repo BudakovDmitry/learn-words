@@ -55,22 +55,22 @@ const initialState = {
     {
       id: 1,
       date: '01/02/2022',
-      result: '100',
+      result: 100,
     },
     {
       id: 2,
       date: '01/02/2022',
-      result: '40',
+      result: 40,
     },
     {
       id: 3,
       date: '01/02/2022',
-      result: '50',
+      result: 50,
     },
   ],
   currentResult: {
     date: '01/02/2022',
-    result: '100',
+    result: 100,
   },
 }
 
@@ -89,7 +89,7 @@ const reducer = (state = initialState, action) => {
     case 'ADD_CURRENT_RESULT':
       return {
         ...state,
-        currentResult: [action.payload],
+        currentResult: action.payload,
       }
     default:
       return state
