@@ -1,6 +1,6 @@
-export const addWord = word => {
+export const addWord = newWord => {
   return {
     type: 'ADD_WORD',
-    payload: word,
+    payload: newWord,
   }
 }

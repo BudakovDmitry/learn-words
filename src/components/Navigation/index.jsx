@@ -5,7 +5,7 @@ const Navigation = () => {
   return (
     <nav className="nav">
       <Link to="/new-words">Нові слова</Link>
-      <Link to="/interactive">Інтерактив</Link>
+      <Link to="/interactive">Повторити слова</Link>
     </nav>
   )
 }
