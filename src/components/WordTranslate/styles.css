@@ -4,10 +4,12 @@
   border-radius: 5px;
   font-size: 20px;
   border: none;
-  background-color: #bbbbbb;
-  color: #ffffff;
+  /* background-color: #bbbbbb; */
+  color: #000000;
+  border: 1px solid #bbbbbb;
 }
 
 .word-translate_button:hover {
   background-color: #7c7c7c;
+  color: #ffffff;
 }

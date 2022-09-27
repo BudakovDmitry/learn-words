@@ -7,18 +7,48 @@ const initialState = {
     },
     {
       id: 2,
-      englishWord: 'Hello',
-      translateWord: 'Привет',
+      englishWord: 'Yes',
+      translateWord: 'Да',
     },
     {
       id: 3,
-      englishWord: 'Hello',
-      translateWord: 'Привет',
+      englishWord: 'Bye',
+      translateWord: 'Пока',
     },
     {
       id: 4,
-      englishWord: 'Hello',
-      translateWord: 'Привет',
+      englishWord: 'Love',
+      translateWord: 'Любить',
+    },
+    {
+      id: 5,
+      englishWord: 'Play',
+      translateWord: 'Играть',
+    },
+    {
+      id: 6,
+      englishWord: 'I',
+      translateWord: 'Я',
+    },
+    {
+      id: 7,
+      englishWord: 'Football',
+      translateWord: 'Футбол',
+    },
+    {
+      id: 8,
+      englishWord: 'Have',
+      translateWord: 'Иметь',
+    },
+    {
+      id: 9,
+      englishWord: 'Good night',
+      translateWord: 'Спокойной ночи',
+    },
+    {
+      id: 10,
+      englishWord: 'She',
+      translateWord: 'Она',
     },
   ],
 }
