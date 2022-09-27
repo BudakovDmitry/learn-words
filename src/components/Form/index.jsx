@@ -37,7 +37,7 @@ const Form = ({ addWord }) => {
           })}
         />
         {errors.translateWord && (
-          <p className="form-error-text">{errors.englishWord.message}</p>
+          <p className="form-error-text">{errors.translateWord.message}</p>
         )}
         <button className="form-button" type="submit">
           Зберегти
