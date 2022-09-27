@@ -1,5 +1,26 @@
 const initialState = {
-  words: [],
+  words: [
+    {
+      id: 1,
+      englishWord: 'Hello',
+      translateWord: 'Привет',
+    },
+    {
+      id: 2,
+      englishWord: 'Hello',
+      translateWord: 'Привет',
+    },
+    {
+      id: 3,
+      englishWord: 'Hello',
+      translateWord: 'Привет',
+    },
+    {
+      id: 4,
+      englishWord: 'Hello',
+      translateWord: 'Привет',
+    },
+  ],
 }
 
 const reducer = (state = initialState, action) => {

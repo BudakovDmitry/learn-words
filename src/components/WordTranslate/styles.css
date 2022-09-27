@@ -1,0 +1,13 @@
+.word-translate_button {
+  width: 250px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 20px;
+  border: none;
+  background-color: #bbbbbb;
+  color: #ffffff;
+}
+
+.word-translate_button:hover {
+  background-color: #7c7c7c;
+}

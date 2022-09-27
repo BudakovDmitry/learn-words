@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { TEXT_FOR_NO_WORDS } from 'src/constants'
 import 'src/pages/Interactive/styles.css'
+import WordCheck from 'src/components/WordCheck'
 
 const Interactive = () => {
   const words = useSelector(state => state.words)
@@ -13,7 +14,7 @@ const Interactive = () => {
         <Link to="/">Домашня</Link>
       </Navigation>
       {words.length ? (
-        <h2 className="interactive-header">Оберіть правильний переклад</h2>
+        <WordCheck />
       ) : (
         <h2 className="list-header-no-words">{TEXT_FOR_NO_WORDS}</h2>
       )}
