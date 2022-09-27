@@ -1,88 +1,15 @@
 import 'src/components/ListWords/styles.css'
+import { useSelector } from 'react-redux'
+import Word from 'src/components/Word'
 
 const ListWords = () => {
+  const words = useSelector(state => state.words)
+
   return (
     <ul className="list">
-      <li className="list-item">First</li>
-      <li className="list-item">Second</li>
-      <li className="list-item">Third</li>
-      <li className="list-item">Fourth</li>
-      <li className="list-item">Fifth</li>
-      <li className="list-item">First</li>
-      <li className="list-item">Second</li>
-      <li className="list-item">Third</li>
-      <li className="list-item">Fourth</li>
-      <li className="list-item">Fifth</li>
-      <li className="list-item">First</li>
-      <li className="list-item">Second</li>
-      <li className="list-item">Third</li>
-      <li className="list-item">Fourth</li>
-      <li className="list-item">Fifth</li>
-      <li className="list-item">First</li>
-      <li className="list-item">Second</li>
-      <li className="list-item">Third</li>
-      <li className="list-item">Fourth</li>
-      <li className="list-item">Fifth</li>
-      <li className="list-item">First</li>
-      <li className="list-item">Second</li>
-      <li className="list-item">Third</li>
-      <li className="list-item">Fourth</li>
-      <li className="list-item">Fifth</li>
-      <li className="list-item">First</li>
-      <li className="list-item">Second</li>
-      <li className="list-item">Third</li>
-      <li className="list-item">Fourth</li>
-      <li className="list-item">Fifth</li>
-      <li className="list-item">First</li>
-      <li className="list-item">Second</li>
-      <li className="list-item">Third</li>
-      <li className="list-item">Fourth</li>
-      <li className="list-item">Fifth</li>
-      <li className="list-item">First</li>
-      <li className="list-item">Second</li>
-      <li className="list-item">Third</li>
-      <li className="list-item">Fourth</li>
-      <li className="list-item">Fifth</li>
-      <li className="list-item">First</li>
-      <li className="list-item">Second</li>
-      <li className="list-item">Third</li>
-      <li className="list-item">Fourth</li>
-      <li className="list-item">Fifth</li>
-      <li className="list-item">First</li>
-      <li className="list-item">Second</li>
-      <li className="list-item">Third</li>
-      <li className="list-item">Fourth</li>
-      <li className="list-item">Fifth</li>
-      <li className="list-item">First</li>
-      <li className="list-item">Second</li>
-      <li className="list-item">Third</li>
-      <li className="list-item">Fourth</li>
-      <li className="list-item">Fifth</li>
-      <li className="list-item">First</li>
-      <li className="list-item">Second</li>
-      <li className="list-item">Third</li>
-      <li className="list-item">Fourth</li>
-      <li className="list-item">Fifth</li>
-      <li className="list-item">First</li>
-      <li className="list-item">Second</li>
-      <li className="list-item">Third</li>
-      <li className="list-item">Fourth</li>
-      <li className="list-item">Fifth</li>
-      <li className="list-item">First</li>
-      <li className="list-item">Second</li>
-      <li className="list-item">Third</li>
-      <li className="list-item">Fourth</li>
-      <li className="list-item">Fifth</li>
-      <li className="list-item">First</li>
-      <li className="list-item">Second</li>
-      <li className="list-item">Third</li>
-      <li className="list-item">Fourth</li>
-      <li className="list-item">Fifth</li>
-      <li className="list-item">First</li>
-      <li className="list-item">Second</li>
-      <li className="list-item">Third</li>
-      <li className="list-item">Fourth</li>
-      <li className="list-item">Fifth</li>
+      {words.map(word => (
+        <Word key={word.id} word={word.englishWord} />
+      ))}
     </ul>
   )
 }

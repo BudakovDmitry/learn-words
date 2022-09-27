@@ -4,16 +4,3 @@
   overflow-y: auto;
   margin: 0 auto;
 }
-
-.list-item {
-  margin-bottom: 50px;
-  list-style-type: none;
-  width: 100px;
-  display: inline-block;
-  cursor: pointer;
-  position: relative;
-}
-
-.list-item:hover {
-  font-weight: bold;
-}
