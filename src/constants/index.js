@@ -10,3 +10,5 @@ export const TEXT_FOR_NO_RESULTS =
 const COUNT_ANSWERS = 10
 
 export const PERCENT_FOR_EVERY_CORRECT_ANSWERS = 100 / COUNT_ANSWERS
+
+export const TEXT_NOTIFICATION_ADD_WORD = 'Слово додано!'
