@@ -1,12 +1,21 @@
 import { useForm } from 'react-hook-form'
 import 'src/components/Form/styles.css'
+import { useEffect } from 'react'
 
 const Form = ({ addWord }) => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
-  } = useForm()
+    formState,
+    formState: { errors, isSubmitSuccessful },
+    reset,
+  } = useForm({ defaultValues: { englishWord: '', translateWord: '' } })
+
+  useEffect(() => {
+    if (isSubmitSuccessful) {
+      reset({ englishWord: '', translateWord: '' })
+    }
+  }, [formState])
 
   return (
     <div className="form-container">
