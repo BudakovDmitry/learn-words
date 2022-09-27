@@ -4,3 +4,17 @@ export const addWord = word => {
     payload: word,
   }
 }
+
+export const addResult = result => {
+  return {
+    type: 'ADD_RESULT',
+    payload: result,
+  }
+}
+
+export const addCurrentResult = result => {
+  return {
+    type: 'ADD_CURRENT_RESULT',
+    payload: result,
+  }
+}

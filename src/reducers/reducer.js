@@ -51,6 +51,17 @@ const initialState = {
       translateWord: 'Она',
     },
   ],
+  results: [
+    {
+      id: 1,
+      date: '01/02/2022',
+      result: '100',
+    },
+  ],
+  currentResult: {
+    date: '01/02/2022',
+    result: '100',
+  },
 }
 
 const reducer = (state = initialState, action) => {
@@ -59,6 +70,16 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         words: [...state.words, action.payload],
+      }
+    case 'ADD_RESULT':
+      return {
+        ...state,
+        results: [...state.results, action.payload],
+      }
+    case 'ADD_CURRENT_RESULT':
+      return {
+        ...state,
+        currentResult: [action.payload],
       }
     default:
       return state
