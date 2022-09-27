@@ -2,7 +2,11 @@ import { useForm } from 'react-hook-form'
 import 'src/components/Form/styles.css'
 
 const Form = ({ addWord }) => {
-  const { register, handleSubmit, reset } = useForm()
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm()
 
   return (
     <div className="form-container">
@@ -18,6 +22,9 @@ const Form = ({ addWord }) => {
             required: "Це поле обов'язково до заповнення",
           })}
         />
+        {errors.englishWord && (
+          <p className="form-error-text">{errors.englishWord.message}</p>
+        )}
         <label className="form-label" htmlFor="translateWord">
           Напишіть переклад Українською
         </label>
@@ -29,6 +36,9 @@ const Form = ({ addWord }) => {
             required: "Це поле обов'язково до заповнення",
           })}
         />
+        {errors.translateWord && (
+          <p className="form-error-text">{errors.englishWord.message}</p>
+        )}
         <button className="form-button" type="submit">
           Зберегти
         </button>

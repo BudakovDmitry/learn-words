@@ -14,13 +14,13 @@
   border-radius: 5px;
   padding-left: 10px;
   font-size: 30px;
-  margin-bottom: 50px;
 }
 
 .form-label {
   display: block;
   margin-bottom: 10px;
   font-size: 20px;
+  margin-top: 50px;
 }
 
 .form-button {
@@ -35,4 +35,12 @@
   font-weight: bold;
   font-size: 18px;
   margin-top: 65px;
+}
+
+.form-error-text {
+  width: 350px;
+  margin: 0 auto;
+  padding: 5px 0 0 0;
+  color: red;
+  font-size: 12px;
 }
