@@ -9,7 +9,7 @@ const NewWords = () => {
   return (
     <div>
       <Navigation>
-        <Link to="/">Домашня</Link>
+        <Link to="/">Головна</Link>
       </Navigation>
       <Form addWord={addNewWord} />
     </div>

@@ -12,7 +12,7 @@ const Interactive = () => {
   return (
     <div>
       <Navigation>
-        <Link to="/">Домашня</Link>
+        <Link to="/">Головна</Link>
       </Navigation>
       {!words.length ? (
         <h2 className="list-header-no-words">{TEXT_FOR_NO_WORDS}</h2>
