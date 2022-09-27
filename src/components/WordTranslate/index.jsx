@@ -1,7 +1,7 @@
 import 'src/components/WordTranslate/styles.css'
 import { useWordTranslate } from 'src/components/WordTranslate/useWordTranslate'
 
-const WordTranslate = ({ word, activeTranslateWord }) => {
+const WordTranslate = ({ word, activeTranslateWord, viewNewWord }) => {
   const { isRightSelected, rightSelect } = useWordTranslate()
   return (
     <button
@@ -12,7 +12,12 @@ const WordTranslate = ({ word, activeTranslateWord }) => {
           ? 'word-translate_button wrong'
           : 'word-translate_button'
       }
-      onClick={() => isRightSelected(word, activeTranslateWord)}
+      onClick={() => {
+        isRightSelected(word, activeTranslateWord)
+        setTimeout(() => {
+          viewNewWord()
+        }, 500)
+      }}
     >
       {word}
     </button>

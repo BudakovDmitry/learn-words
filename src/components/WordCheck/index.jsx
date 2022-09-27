@@ -1,19 +1,26 @@
 import 'src/components/WordCheck/styles.css'
 import WordsTranslate from 'src/components/WordsTranslate'
-import { useSelector } from 'react-redux'
 import { getFourTranslateWords } from 'src/utils/helpers'
+import { useWordCheck } from 'src/components/WordCheck/useWordCheck'
 
 const WordCheck = () => {
-  const words = useSelector(state => state.words)
+  const { words, activeWordIndex, addWordIndex, wordNumber } = useWordCheck()
 
   return (
     <div className="word-check">
       <h4 className="word-check_header">Оберіть правильний переклад слова:</h4>
-      <h3 className="word-check_english-word">{words[0].englishWord}</h3>
+      <h3 className="word-check_english-word">
+        {words[activeWordIndex].englishWord}
+      </h3>
       <WordsTranslate
-        words={getFourTranslateWords(words, words[0].translateWord)}
-        activeTranslateWord={words[0].translateWord}
+        words={getFourTranslateWords(
+          words,
+          words[activeWordIndex].translateWord,
+        )}
+        activeTranslateWord={words[activeWordIndex].translateWord}
+        viewNewWord={addWordIndex}
       />
+      <p className="word-check_word-number">{`Слово №${wordNumber}`}</p>
     </div>
   )
 }

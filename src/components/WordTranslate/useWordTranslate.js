@@ -7,5 +7,9 @@ export const useWordTranslate = () => {
     setRightSelect(selectedTranslate === activeTranslate ? 'true' : 'false')
   }
 
+  setTimeout(() => {
+    setRightSelect('')
+  }, 450)
+
   return { isRightSelected, rightSelect }
 }
