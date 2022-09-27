@@ -1,7 +1,7 @@
 import 'src/components/ListWords/styles.css'
 import { useSelector } from 'react-redux'
 import Word from 'src/components/Word'
-import { TEXT_FOR_NO_WORDS } from 'src/components/ListWords/constants'
+import { TEXT_FOR_NO_WORDS } from 'src/constants'
 
 const ListWords = () => {
   const words = useSelector(state => state.words)
