@@ -1,5 +1,13 @@
+import Navigation from 'src/components/Navigation'
+import Form from 'src/components/Form'
+
 const NewWords = () => {
-  return <h2>NewWords</h2>
+  return (
+    <div>
+      <Navigation />
+      <Form />
+    </div>
+  )
 }
 
 export default NewWords

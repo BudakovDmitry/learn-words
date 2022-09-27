@@ -1,0 +1,38 @@
+.form-container {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form-input {
+  display: block;
+  margin: 0 auto;
+  width: 350px;
+  height: 50px;
+  border: 1px solid #4b5663;
+  color: #000000;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.form-button {
+  display: block;
+  margin: 0 auto;
+  width: 360px;
+  height: 50px;
+  background-color: #2ea44f;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 65px;
+}

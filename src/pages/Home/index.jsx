@@ -1,5 +1,14 @@
+import Navigation from 'src/components/Navigation'
+import ListWords from 'src/components/ListWords'
+import 'src/pages/Home/styles.css'
+
 const Home = () => {
-  return <h2>Home</h2>
+  return (
+    <div>
+      <Navigation />
+      <ListWords />
+    </div>
+  )
 }
 
 export default Home
