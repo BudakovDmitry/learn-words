@@ -26,3 +26,7 @@ yarn start
 ```
 
 open http://localhost:3000/
+
+### or
+
+open https://budakovdmitry.github.io/learn-words/
