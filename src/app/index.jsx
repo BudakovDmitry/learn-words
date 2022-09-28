@@ -4,6 +4,7 @@ import Interactive from 'src/pages/Interactive'
 import Result from 'src/pages/Result'
 import AllResults from 'src/pages/AllResults'
 import Home from 'src/pages/Home'
+import PageNotFound from 'src/pages/PageNotFound'
 import store from 'src/store/store'
 import { Provider } from 'react-redux'
 
@@ -17,7 +18,7 @@ const App = () => {
           <Route path="/interactive" element={<Interactive />} />
           <Route path="/result" element={<Result />} />
           <Route path="/all-results" element={<AllResults />} />
-          <Route path="*" element={<h2>Page Not Found</h2>} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
     </Provider>
