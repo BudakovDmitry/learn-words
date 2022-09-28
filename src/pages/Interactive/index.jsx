@@ -1,13 +1,13 @@
 import Navigation from 'src/components/Navigation'
 import { Link } from 'react-router-dom'
-import { useSelector } from 'react-redux'
+import { useInteractive } from 'src/pages/Interactive/useInteractive'
 import { TEXT_FOR_NO_WORDS, TEXT_FOR_NOT_ENOUGH_WORDS } from 'src/constants'
 import 'src/pages/Interactive/styles.css'
 import WordCheck from 'src/components/WordCheck'
 import { minCountWords } from 'src/utils/helpers'
 
 const Interactive = () => {
-  const words = useSelector(state => state.words)
+  const { words } = useInteractive()
 
   return (
     <div>

@@ -2,12 +2,12 @@ import Navigation from 'src/components/Navigation'
 import { Link } from 'react-router-dom'
 import 'src/pages/AllResults/styles.css'
 import AllResultsList from 'src/components/AllResultsList'
-import { useSelector } from 'react-redux'
+import { useAllResults } from 'src/pages/AllResults/useAllResults'
 import { TEXT_FOR_NO_RESULTS } from 'src/constants'
 import { averagePercentResult } from 'src/utils/helpers'
 
 const AllResults = () => {
-  const allResults = useSelector(state => state.allResults)
+  const { allResults } = useAllResults()
 
   return (
     <div className="all-results">

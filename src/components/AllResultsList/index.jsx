@@ -1,9 +1,9 @@
 import AllResultsItem from 'src/components/AllResultsItem'
 import 'src/components/AllResultsList/styles.css'
-import { useSelector } from 'react-redux'
+import { useAllResultsList } from 'src/components/AllResultsList/useAllResultsList'
 
 const AllResultsList = () => {
-  const allResults = useSelector(state => state.allResults)
+  const { allResults } = useAllResultsList()
 
   return (
     <ul className="all-results-list">

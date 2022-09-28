@@ -1,7 +1,7 @@
 import CloseIcon from 'src/images/close-icon.svg'
 import 'src/components/Notification/styles.css'
 
-const Notification = ({ text, setActive }) => {
+const Notification = ({ text = '', setActive }) => {
   return (
     <div className="notification-container" onClick={e => e.stopPropagation()}>
       <p className="notification-text">{text}</p>

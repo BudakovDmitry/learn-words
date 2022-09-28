@@ -1,11 +1,10 @@
 import 'src/pages/Result/styles.css'
 import Navigation from 'src/components/Navigation'
 import { Link } from 'react-router-dom'
-import { useSelector } from 'react-redux'
+import { useResult } from 'src/pages/Result/useResult'
 
 const Result = () => {
-  const currentResult = useSelector(state => state.currentResult)
-  console.log(currentResult)
+  const { currentResult } = useResult()
   return (
     <div className="result">
       <Navigation>
