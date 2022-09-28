@@ -6,9 +6,9 @@ const Home = () => {
   return (
     <div>
       <Navigation>
-        <Link to="/new-words">Нові слова</Link>
-        <Link to="/interactive">Повторити слова</Link>
-        <Link to="/all-results">Усі результати</Link>
+        <Link to="/learn-words/new-words">Нові слова</Link>
+        <Link to="/learn-words/interactive">Повторити слова</Link>
+        <Link to="/learn-words/all-results">Усі результати</Link>
       </Navigation>
       <ListWords />
     </div>

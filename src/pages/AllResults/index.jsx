@@ -12,7 +12,7 @@ const AllResults = () => {
   return (
     <div className="all-results">
       <Navigation>
-        <Link to="/">Головна</Link>
+        <Link to="/learn-words">Головна</Link>
       </Navigation>
       {allResults.length ? (
         <>

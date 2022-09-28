@@ -17,7 +17,7 @@ const NewWords = () => {
   return (
     <div>
       <Navigation>
-        <Link to="/">Головна</Link>
+        <Link to="/learn-words">Головна</Link>
       </Navigation>
       <Form addWord={addNewWord} />
       {activeNotification &&

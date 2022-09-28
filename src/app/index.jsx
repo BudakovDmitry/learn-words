@@ -13,11 +13,11 @@ const App = () => {
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/new-words" element={<NewWords />} />
-          <Route path="/interactive" element={<Interactive />} />
-          <Route path="/result" element={<Result />} />
-          <Route path="/all-results" element={<AllResults />} />
+          <Route path="/learn-words" element={<Home />} />
+          <Route path="/learn-words/new-words" element={<NewWords />} />
+          <Route path="/learn-words/interactive" element={<Interactive />} />
+          <Route path="/learn-words/result" element={<Result />} />
+          <Route path="/learn-words/all-results" element={<AllResults />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>

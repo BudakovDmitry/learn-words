@@ -8,8 +8,8 @@ const Result = () => {
   return (
     <div className="result">
       <Navigation>
-        <Link to="/">Головна</Link>
-        <Link to="/all-results">Усі результати</Link>
+        <Link to="/learn-words">Головна</Link>
+        <Link to="/learn-words/all-results">Усі результати</Link>
       </Navigation>
       <h2>{`Ваш результат: ${currentResult.percent}%`}</h2>
     </div>

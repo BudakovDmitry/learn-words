@@ -4,6 +4,7 @@
   "main": "index.js",
   "repository": "https://github.com/BudakovDmitry/learn-words.git",
   "author": "Budakov Dmitry <budakov.it@gmail.com>",
+  "homepage": "https://budakovdmitry.github.io/learn-words/",
   "license": "MIT",
   "scripts": {
     "start": "webpack serve",
