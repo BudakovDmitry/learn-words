@@ -1,0 +1,264 @@
+/*!****************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Navigation/styles.css ***!
+  \****************************************************************************************/
+.nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.nav a {
+  display: block;
+  margin: 0 40px;
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.nav a:hover {
+  background-color: rgba(168, 168, 168, 0.502);
+}
+/*!**********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Form/styles.css ***!
+  \**********************************************************************************/
+.form-container {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form-input {
+  display: block;
+  margin: 0 auto;
+  width: 350px;
+  height: 50px;
+  border: 1px solid #4b5663;
+  color: #000000;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 30px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.form-button {
+  display: block;
+  margin: 0 auto;
+  width: 360px;
+  height: 50px;
+  background-color: #2ea44f;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 65px;
+}
+.form-button:hover {
+  background-color: #236130; 
+}
+
+
+.form-error-text {
+  width: 350px;
+  margin: 0 auto;
+  padding: 5px 0 0 0;
+  color: red;
+  font-size: 12px;
+}
+/*!******************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Notification/styles.css ***!
+  \******************************************************************************************/
+.notification-container {
+  position: fixed;
+  top: 20px;
+  right: 40px;
+  width: 300px;
+  height: 70px;
+  border: 1px solid #087e1e;
+  padding: 0;
+  border-radius: 10px;
+  background-color: #f0fbee;
+  z-index: 100;
+}
+
+.notification-text {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-20%, -50%);
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  color: #14611f;
+  font-size: 18px;
+}
+
+.notification-button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+  background: none;
+  border: none;
+}
+
+/*!************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/pages/Interactive/styles.css ***!
+  \************************************************************************************/
+.interactive-header {
+  text-align: center;
+}
+/*!***************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/WordCheck/styles.css ***!
+  \***************************************************************************************/
+.word-check {
+  text-align: center;
+}
+
+.word-check_header {
+  margin-bottom: 50px;
+}
+
+.word-check_english-word {
+  margin-bottom: 100px;
+  font-size: 36px;
+}
+
+.word-check_word-number {
+  margin-top: 100px;
+}
+/*!*******************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/WordTranslate/styles.css ***!
+  \*******************************************************************************************/
+.word-translate_button {
+  width: 250px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 20px;
+  border: none;
+  /* background-color: #bbbbbb; */
+  color: #000000;
+  border: 1px solid #bbbbbb;
+}
+
+.word-translate_button:hover {
+  background-color: #7c7c7c;
+  color: #ffffff;
+}
+
+.word-translate_button.right {
+    background-color: green;
+    color: #ffffff;
+}
+
+.word-translate_button.wrong {
+  background-color: rgb(169, 5, 5);
+  color: #ffffff;
+}
+/*!********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/WordsTranslate/styles.css ***!
+  \********************************************************************************************/
+.words-translate {
+  display: flex;
+  justify-content: space-around;
+}
+/*!*******************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/pages/Result/styles.css ***!
+  \*******************************************************************************/
+.result {
+  text-align: center;
+}
+/*!***********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/pages/AllResults/styles.css ***!
+  \***********************************************************************************/
+.all-results_header {
+  text-align: center;
+}
+
+.all-results_results {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.all-results_middle {
+  margin: 0;
+}
+
+.all-results-no-results {
+  text-align: center;
+}
+/*!********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/AllResultsItem/styles.css ***!
+  \********************************************************************************************/
+.all-results-item {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+/*!********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/AllResultsList/styles.css ***!
+  \********************************************************************************************/
+.all-results-list {
+  font-weight: bold;
+  font-size: 18px;
+  font-style: italic;
+}
+/*!***************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/ListWords/styles.css ***!
+  \***************************************************************************************/
+.list {
+  width: 80%;
+  height: 70vh;
+  overflow-y: auto;
+  margin: 0 auto;
+}
+
+.list-header-no-words {
+  text-align: center;
+  padding: 0 100px;
+  line-height: 2;
+}
+
+.list-header {
+  text-align: center;
+}
+/*!**********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Word/styles.css ***!
+  \**********************************************************************************/
+.list-item {
+  margin-bottom: 50px;
+  margin-right: 50px;
+  padding: 5px;
+  list-style-type: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 18px;
+  /* position: relative; */
+}
+
+.list-item:hover {
+  text-shadow: 0px 1px 2px rgba(0,0,0,0.49);
+}
+
+/*!*****************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/index.css ***!
+  \*****************************************************************/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+}
